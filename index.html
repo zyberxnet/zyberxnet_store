@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZyberXNet Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>ZyberXNet Cards</h1>
+  <div class="cards-container">
+    <!-- Carding Course - Full Details -->
+    <div class="card">
+      <h2>Carding Course</h2>
+      <p><strong>Price:</strong> $20</p>
+      <p><strong>BIN:</strong> 444455******</p>
+      <p>This course includes carding full guide, setup, btain Credit/Debit Card Information,Validate Card Data,Drop Shipping,Keep or Resell the Goods.</p>
+      <button onclick="openForm('Carding Course', '$20')">Buy Now</button>
+    </div>
+
+    <!-- Other Cards - Brief -->
+    <div class="card">
+      <h2>US Debit Card</h2>
+      <p><strong>Price:</strong> $15</p>
+      <p><strong>BIN:</strong> 511111******</p>
+      <p>High balance debit card</p>
+      <button onclick="openForm('US Debit Card', '$15')">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <h2>UK Bank Card</h2>
+      <p><strong>Price:</strong> $20</p>
+      <p><strong>BIN:</strong> 432143******</p>
+      <p>Verified UK card for use</p>
+      <button onclick="openForm('UK VISA Card', '$20')">Buy Now</button>
+    </div>
+  
+  </div>
+  <div class="card">
+  <h2>Card Title</h2>
+  <p><strong>Price:</strong> $30</p>
+  <p><strong>BIN:</strong> 421456******</p>
+  <p>Short Description</p>
+  <button onclick="openForm('US Credit Card', '$30')">Buy Now</button>
+</div>
+
+  <!-- Modal Form -->
+  <div id="formModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeForm()">&times;</span>
+      <form action="https://formsubmit.io/send/zyberxnet@gmail.com" method="POST" enctype="multipart/form-data">
+        <h2>Purchase Form</h2>
+        <input type="hidden" name="_captcha" value="false">
+        <label>Product:</label>
+        <input type="text" name="Product" id="productField" readonly />
+        <label>Price:</label>
+        <input type="text" name="Price" id="priceField" readonly />
+        <label>Your Name:</label>
+        <input type="text" name="Name" required />
+        <label>Your Email:</label>
+        <input type="email" name="Email" required />
+        <label>BTC Address:</label>
+        <p class="readonly">1PVraChpdV6KAKPPcCpPGBmsooPQvjg8Yg</p>
+        <label>Binance ID:</label>
+        <p class="readonly">1088557547</p>
+        <label>Upload Screenshot:</label>
+        <input type="file" name="Screenshot" accept="image/*" required />
+        <label>Message (Optional):</label>
+        <textarea name="Message" rows="3"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
